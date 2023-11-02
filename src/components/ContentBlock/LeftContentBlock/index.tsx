@@ -1,4 +1,4 @@
-import { Row, Col } from "antd";
+import {Row, Col, Image} from "antd";
 import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../../common/SvgIcon";
 import { ContentBlockProps } from "../types";
@@ -25,7 +25,7 @@ const LeftContentBlock = ({
       <Fade direction="left">
         <Row justify="space-between" align="middle" id={id}>
           <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
+            <Image preview={false} src={icon} width="100%" height="100%" />
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>

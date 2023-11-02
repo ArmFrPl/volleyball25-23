@@ -1,4 +1,4 @@
-import { Row, Col } from "antd";
+import {Row, Col, Image} from "antd";
 import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
@@ -49,18 +49,19 @@ const Footer = ({ t }: any) => {
     <>
       <FooterSection>
         <Container>
-          <Row justify="space-between">
-            <Col lg={10} md={10} sm={12} xs={12}>
+          <Row justify={"space-evenly"}>
+            <Col lg={8} md={8} sm={12} xs={10}>
               <Language>{t("Contact")}</Language>
               <Large to="/">{t("Tell us everything")}</Large>
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
-              <a href="mailto:l.qqbadze@gmail.com">
+              {/*<a href="mailto:katevelichko02@gmail.com">*/}
+              <a href="#">
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
             </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
+            <Col lg={5} md={6} sm={6} xs={6}>
               <Title>{t("Policy")}</Title>
               <Large to="/" left="true">
                 {t("Application Security")}
@@ -69,56 +70,29 @@ const Footer = ({ t }: any) => {
                 {t("Software Principles")}
               </Large>
             </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
-              <Empty />
-              <Large left="true" to="/">
-                {t("Support Center")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Customer Support")}
-              </Large>
-            </Col>
-          </Row>
-          <Row justify="space-between">
-            <Col lg={10} md={10} sm={12} xs={12}>
-              <Empty />
+            <Col lg={5} md={6} sm={6} xs={6}>
               <Language>{t("Address")}</Language>
               <Para>Rancho Santa Margarita</Para>
               <Para>2131 Elk Street</Para>
               <Para>California</Para>
             </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Company")}</Title>
-              <Large left="true" to="/">
-                {t("About")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Blog")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Press")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Careers & Culture")}
-              </Large>
-            </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
-              <Label htmlFor="select-lang">{t("Language")}</Label>
+            <Col lg={3} md={6} sm={12} xs={12}>
+              <Label htmlFor="select-lang" style={{marginBottom: '10px'}}>{t("Language")}</Label>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("en")}>
                   <SvgIcon
                     src="united-states.svg"
                     aria-label="homepage"
-                    width="30px"
-                    height="30px"
+                    width="25px"
+                    height="25px"
                   />
                 </LanguageSwitch>
-                <LanguageSwitch onClick={() => handleChange("es")}>
+                <LanguageSwitch onClick={() => handleChange("ru")}>
                   <SvgIcon
                     src="spain.svg"
                     aria-label="homepage"
-                    width="30px"
-                    height="30px"
+                    width="25px"
+                    height="25px"
                   />
                 </LanguageSwitch>
               </LanguageSwitchContainer>
@@ -135,8 +109,9 @@ const Footer = ({ t }: any) => {
           >
             <NavLink to="/">
               <LogoContainer>
-                <SvgIcon
-                  src="logo.svg"
+                <Image
+                    preview={false}
+                  src="img/images/logo.png"
                   aria-label="homepage"
                   width="101px"
                   height="64px"
@@ -160,12 +135,6 @@ const Footer = ({ t }: any) => {
                 href="https://medium.com/@lashakakabadze/"
                 src="medium.svg"
               />
-              <a href="https://www.buymeacoffee.com/adrinlol">
-                <img
-                  src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=adrinlol&button_colour=FF5F5F&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"
-                  alt="Buy me a pizza"
-                />
-              </a>
             </FooterContainer>
           </Row>
         </Container>
