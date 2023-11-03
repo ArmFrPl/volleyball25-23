@@ -109,10 +109,7 @@ export const Styles = createGlobalStyle`
     .ant-drawer-content-wrapper {
         width: 300px !important;
     }
-    .ehpFfz{
-      white-space: pre-wrap;
-    }
-    .hcukWv{
+    MinPara{
       white-space: pre-wrap;
     }
     .centerText{

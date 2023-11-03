@@ -39,7 +39,7 @@ const LeftContentBlock = ({
                         <Col key={id} span={11}>
                           <SvgIcon src={item.icon} width="60px" height="60px" />
                           <MinTitle>{t(item.title)}</MinTitle>
-                          <MinPara>{t(item.content)}</MinPara>
+                          <Content>{t(item.content)}</Content>
                         </Col>
                       );
                     })}
