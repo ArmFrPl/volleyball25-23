@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useHistory } from "react-router"
 import {Row, Col, Drawer, Image} from "antd";
 import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
@@ -16,8 +17,10 @@ import {
   Span,
 } from "./styles";
 
+
 const Header = ({ t }: any) => {
   const [visible, setVisibility] = useState(false);
+  const history = useHistory();
 
   const showDrawer = () => {
     setVisibility(!visible);
@@ -37,18 +40,38 @@ const Header = ({ t }: any) => {
     };
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("about")}>
+        <CustomNavLinkSmall onClick={async () => {
+          if((window.location.pathname !== "/")){
+            await history.push('/')
+            await scrollTo("about")
+          }else{scrollTo("about")}
+        }}>
           <Span>{t("About")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
+        <CustomNavLinkSmall onClick={async () => {
+          if(window.location.pathname !== "/"){
+            await history.push('/')
+            await scrollTo("mission")
+          }else{scrollTo("mission")}
+        }}>
           <Span>{t("Mission")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("product")}>
+        <CustomNavLinkSmall onClick={async () => {
+          if(window.location.pathname !== "/"){
+            await history.push('/')
+            await scrollTo("product")
+          }else{scrollTo("product")}
+        }}>
           <Span>{t("Product")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
+          onClick={async () => {
+            if(window.location.pathname !== "/"){
+              await history.push('/')
+              await scrollTo("contact")
+            }else{scrollTo("contact")}
+          }}
         >
           <Span>
             <Button>{t("Contact")}</Button>

@@ -56,25 +56,20 @@ const Footer = ({ t }: any) => {
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
-              {/*<a href="mailto:katevelichko02@gmail.com">*/}
-              <a href="#">
+              <a href="https://t.me/Katyha_velichko">
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
             </Col>
             <Col lg={5} md={6} sm={6} xs={6}>
               <Title>{t("Policy")}</Title>
-              <Large to="/" left="true">
-                {t("Application Security")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Software Principles")}
+              <Large to="/agreement" left="true" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>
+                {t("Agreement")}
               </Large>
             </Col>
             <Col lg={5} md={6} sm={6} xs={6}>
               <Language>{t("Address")}</Language>
-              <Para>Rancho Santa Margarita</Para>
-              <Para>2131 Elk Street</Para>
-              <Para>California</Para>
+              <Para>{t("AddressStr")}</Para>
+              <Para>{t("AddressCountry")}</Para>
             </Col>
             <Col lg={3} md={6} sm={12} xs={12}>
               <Label htmlFor="select-lang" style={{marginBottom: '10px'}}>{t("Language")}</Label>
@@ -89,7 +84,7 @@ const Footer = ({ t }: any) => {
                 </LanguageSwitch>
                 <LanguageSwitch onClick={() => handleChange("ru")}>
                   <SvgIcon
-                    src="spain.svg"
+                    src="russia.svg"
                     aria-label="homepage"
                     width="25px"
                     height="25px"
@@ -115,25 +110,22 @@ const Footer = ({ t }: any) => {
                   aria-label="homepage"
                   width="101px"
                   height="64px"
+                  onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
                 />
               </LogoContainer>
             </NavLink>
             <FooterContainer>
               <SocialLink
-                href="https://github.com/Adrinlol/create-react-app-adrinlol"
-                src="github.svg"
+                href="https://instagram.com/volleyball25_23?igshid=OGQ5ZDc2ODk2ZA=="
+                src="instagram.svg"
               />
               <SocialLink
-                href="https://twitter.com/Adrinlolx"
-                src="twitter.svg"
+                href="https://www.tiktok.com/@volleyball25_23?_t=8h3BCRGt4pq&_r=1"
+                src="tiktok.svg"
               />
               <SocialLink
-                href="https://www.linkedin.com/in/lasha-kakabadze/"
-                src="linkedin.svg"
-              />
-              <SocialLink
-                href="https://medium.com/@lashakakabadze/"
-                src="medium.svg"
+                  href="https://www.facebook.com/profile.php?id=100072351273080&mibextid=LQQJ4d"
+                  src="facebook.svg"
               />
             </FooterContainer>
           </Row>

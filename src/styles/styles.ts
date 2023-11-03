@@ -109,4 +109,18 @@ export const Styles = createGlobalStyle`
     .ant-drawer-content-wrapper {
         width: 300px !important;
     }
+    .ehpFfz{
+      white-space: pre-wrap;
+    }
+    .hcukWv{
+      white-space: pre-wrap;
+    }
+    .centerText{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
 `;
