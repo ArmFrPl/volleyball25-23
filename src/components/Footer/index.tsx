@@ -74,7 +74,10 @@ const Footer = ({ t }: any) => {
             <Col lg={3} md={6} sm={12} xs={12}>
               <Label htmlFor="select-lang" style={{marginBottom: '10px'}}>{t("Language")}</Label>
               <LanguageSwitchContainer>
-                <LanguageSwitch onClick={() => handleChange("en")}>
+                <LanguageSwitch onClick={() => {
+                  handleChange("en")
+                  window.scrollTo({top: 0, behavior: "smooth"})
+                }}>
                   <SvgIcon
                     src="united-states.svg"
                     aria-label="homepage"
@@ -82,7 +85,10 @@ const Footer = ({ t }: any) => {
                     height="25px"
                   />
                 </LanguageSwitch>
-                <LanguageSwitch onClick={() => handleChange("ru")}>
+                <LanguageSwitch onClick={() => {
+                  handleChange("ru")
+                  window.scrollTo({top: 0, behavior: "smooth"})
+                }}>
                   <SvgIcon
                     src="russia.svg"
                     aria-label="homepage"
