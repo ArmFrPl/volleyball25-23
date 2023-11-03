@@ -16,6 +16,8 @@ import {
   Outline,
   Span,
 } from "./styles";
+import {Large} from "../Footer/styles";
+import {Link} from "react-router-dom";
 
 
 const Header = ({ t }: any) => {
@@ -55,6 +57,13 @@ const Header = ({ t }: any) => {
           }else{scrollTo("mission")}
         }}>
           <Span>{t("Mission")}</Span>
+        </CustomNavLinkSmall>
+        <CustomNavLinkSmall>
+          <Link to="/agreement">
+          <Span>
+            {t("Agreement")}
+          </Span>
+          </Link>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
