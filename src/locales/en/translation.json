@@ -1,12 +1,12 @@
 {
   "About": "About",
   "Policy": "Policy",
-  "Mission": "Mission",
+  "Mission": "Groups",
   "Product": "Product",
   "Tell us everything": "Tell us everything",
-  "Contact": "Contact",
-  "Do you have any question? Feel free to reach out.": "Do you have any question? Feel free to reach out.",
-  "Let's Chat": "Let's Chat",
+  "Contact": "Contacts",
+  "Do you have any question? Feel free to reach out.": "Questions left? Write us.",
+  "Let's Chat": "Connect",
   "Agreement": "Agreement",
   "Address": "Address",
   "Language": "Language",
@@ -27,5 +27,8 @@
   "AboutTitle": "About Us",
   "AboutText": "Volleyball School 25:23 - a family where everyone is united by love for volleyball, warm atmosphere of acceptance, support and care. \n\nWe aim at the all-round development of the personality - physical, spiritual, intellectual, social and mental, and our main value - people. That is why our training process includes not only sessions in the gym, but also additional meetings, trips and tournaments.",
   "MissionTitle": "Our Groups",
-  "MissionText": "Today we have 3 groups for teenagers 12-15 years old:\n\nKalinouskaha Str., 36\nWednesday-Friday 16:00 - 18:00 \nThursday-Saturday 16:00 - 17:30\n\nKamennogorskaya str., 70\nSaturday 16:00 - 17:30\n\nSign up for free training!\nWe are waiting for you ❤️"
+  "MissionText": "Today we have 3 groups for teenagers 12-15 years old:\n\nKalinouskaha Str., 36\nWednesday-Friday 16:00 - 18:00 \nThursday-Saturday 16:00 - 17:30\n\nKamennogorskaya str., 70\nSaturday 16:00 - 17:30\n\nSign up for free training!\nWe are waiting for you ❤️",
+  "ContactTitle":  "Register for training",
+  "ContactText": "We invite you to a free trial training, where you can get acquainted with the trainer and the group, see the format of training and decide whether we are suitable for each other or not)!\n\nTo make an appointment, please write to our manager, she will tell you the date of the next training, free places in groups and answer all your questions.",
+  "ContactButton": "Register"
 }

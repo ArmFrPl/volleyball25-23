@@ -56,14 +56,6 @@ const Header = ({ t }: any) => {
         }}>
           <Span>{t("Mission")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={async () => {
-          if(window.location.pathname !== "/"){
-            await history.push('/')
-            await scrollTo("product")
-          }else{scrollTo("product")}
-        }}>
-          <Span>{t("Product")}</Span>
-        </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
           onClick={async () => {
@@ -74,7 +66,7 @@ const Header = ({ t }: any) => {
           }}
         >
           <Span>
-            <Button>{t("Contact")}</Button>
+            <Button>{t("Register")}</Button>
           </Span>
         </CustomNavLinkSmall>
       </>

@@ -52,8 +52,7 @@ const Footer = ({ t }: any) => {
           <Row justify={"space-evenly"}>
             <Col lg={8} md={8} sm={12} xs={10}>
               <Language>{t("Contact")}</Language>
-              <Large to="/">{t("Tell us everything")}</Large>
-              <Para>
+              <Para style={{whiteSpace: "pre-wrap"}}>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
               <a href="https://t.me/Katyha_velichko">
@@ -109,13 +108,21 @@ const Footer = ({ t }: any) => {
             style={{ paddingTop: "3rem" }}
           >
             <NavLink to="/">
-              <LogoContainer>
+              <LogoContainer style={{alignItems:"center"}}>
                 <Image
-                    preview={false}
+                  preview={false}
                   src="img/images/logo.png"
                   aria-label="homepage"
                   width="101px"
                   height="64px"
+                  onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
+                />
+                <Image
+                  preview={false}
+                  src="img/images/logoAs.png"
+                  aria-label="homepage"
+                  width="250px"
+                  style={{marginLeft: "20px"}}
                   onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
                 />
               </LogoContainer>

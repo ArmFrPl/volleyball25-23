@@ -3,6 +3,7 @@ import { withTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
 import { Button } from "../../common/Button";
 import { MiddleBlockSection, Content, ContentWrapper } from "./styles";
+import {useHistory} from "react-router";
 
 interface MiddleBlockProps {
   title: string;
@@ -27,7 +28,9 @@ const MiddleBlock = ({ title, content, button, t }: MiddleBlockProps) => {
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
               {button && (
-                <Button name="submit" onClick={() => scrollTo("mission")}>
+                <Button name="submit" onClick={() => window.open(
+                  'https://t.me/Katyha_velichko',
+                  '_blank')}>
                   {t(button)}
                 </Button>
               )}

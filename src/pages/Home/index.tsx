@@ -5,6 +5,7 @@ import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
+import MiddleBlock from "../../components/MiddleBlock";
 
 
 const Contact = lazy(() => import("../../components/ContactForm"));
@@ -39,15 +40,10 @@ const Home = ({ t }: any) => {
         id="mission"
       />
       <ContentBlock
-        type="left"
-        title={ProductContent.title}
-        content={ProductContent.text}
-        icon="img/images/logoAs.png"
-        id="product"
-      />
-      <Contact
-        title={ContactContent.title}
-        content={ContactContent.text}
+        type="rightN"
+        title={t("ContactTitle")}
+        content={t("ContactText")}
+        button={ContactContent.button}
         id="contact"
       />
     </Container>
